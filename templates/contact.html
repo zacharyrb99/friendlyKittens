@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact Us{% endblock %}
+
+{% block content %}
+    <div class="container vertical-center">
+        <div class="row">
+            <div class="col-8">
+                <img class='img-thumbnail' src='/static/friendlykittens_location.jpg'>
+                
+            </div>
+            <div class="col-4 text-dark">
+                <div class="card" style="width: 20rem;">
+                    <img src="/static/friendlyKittens_profile.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class='card-title'>Breeder - Sean Donovan</h5>
+                        <p>
+                            We are located in Waterford, VA. Easy access from Leesburg, VA and Charles Town, WV. 
+                            20 Minutes from Dulles Airport and 45 minutes from Washington, DC.
+                        </p>
+                        <p>
+                            <a href="https://www.facebook.com/friendlykittens/" class='remove-underline'>
+                                <i class="fab fa-facebook"></i> <span class='shift-right text-dark'>FriendlyKittens Facebook</span>
+                            </a>
+                        </p>
+                        <p>
+                            <i class="fas fa-phone"></i> <span class='shift-right'>540-822-0221</span>
+                        </p>
+                        <p>
+                            <a href="mailto:sdonovan@friendlykittens.com" class='remove-underline text-dark'>
+                                <i class="fas fa-envelope"></i> <span class='shift-right'>sdonovan@friendlykittens.com</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,122 @@
+.carousel{
+    border-radius:10px;
+}
+
+.carousel-item{
+    height: 100vh;
+    background: #000;
+    color: white;
+    position: relative;
+}
+
+#carouselText{
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    padding-bottom:75px;
+}
+
+.overlay-image{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+}
+
+.shift-down{
+    padding-top: 60px;
+}
+
+.shift-right{
+    padding-left: 15px;
+}
+
+.navbar-brand{
+    margin:auto;
+}
+
+.nav-item:not(.active):hover{
+    text-decoration: underline;
+    font-size:20px;
+    transition:0.3s;
+}
+
+.fas.fa-cat, .fab.fa-facebook{
+    margin-left: 1vw;
+    transform: scale(2)
+}
+
+.fas.fa-phone, .fas.fa-envelope{
+    margin-left: 1vw;
+    transform: scale(1.75);
+}
+
+.active{
+    text-decoration: underline;
+}
+
+.link-font{
+    font-size: 20px;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+
+.remove-underline{
+    text-decoration: none;
+}
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #212529;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 2s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+@keyframes loader-inner {
+  0% { height: 0%;}
+  25% { height: 0%;}
+  50% { height: 100%;}
+  75% { height: 100%;}
+  100% { height: 0%;}
+}

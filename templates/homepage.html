@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}Friendly Kittens{% endblock %}
+
+{% block content %}
+    <div id="kittenCarousel" class="carousel slide carousel-fade" data-bs-ride='carousel'>
+        <ol class="carousel-indicators">
+            <li data-bs-target="#kittenCarousel" data-bs-slide-to="0" class='active'></li>
+            <li data-bs-target="#kittenCarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#kittenCarousel" data-bs-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <div class="overlay-image" style="background-image:url(/static/friendlyKittens_slide.jpg)"></div>
+                <div class="container" id='carouselText'>
+                    <h1 class='display-3 text-center'>Thank you for visiting FriendlyKittens</h1>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <div class="overlay-image" style="background-image:url();"></div>
+                <div class="container" id='carouselText'>
+                    <h1 class='display-3 text-center'>Thank you for visiting FriendlyKittens</h1>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <div class="overlay-image" style="background-image:url(/static/friendlyKittens_slide.jpg)"></div>
+                <div class="container" id='carouselText'>
+                    <h1 class='display-3 text-center'>Thank you for visiting FriendlyKittens</h1>
+                </div>
+            </div>
+        </div>
+
+        <a href="#kittenCarousel" class='carousel-control-prev' role='button' data-bs-slide='prev'>
+            <span class="sr-only">Previous</span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a href="#kittenCarousel" class='carousel-control-next' role='button' data-bs-slide='next'>
+            <span class="sr-only">Next</span>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+    </div>
+{% endblock %}
+
