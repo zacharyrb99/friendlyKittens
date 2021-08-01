@@ -1,3 +1,21 @@
+@media screen and (max-width: 750px) {
+    .about{
+        margin-top: 65px;
+    }
+
+    .adopt{
+        margin-top: 50px;
+    }
+
+    .contact{
+        margin-top: 40px;
+    }
+
+    .contact-card{
+        margin-top: 65px;
+    }
+}
+
 .carousel{
     border-radius:10px;
 }
